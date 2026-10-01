@@ -31,7 +31,7 @@
       <div class="row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><dt>Our location</dt><dd>Bewdley Business Park<br>Long Bank, Bewdley<br>Worcester, Worcestershire<br>DY12 2TZ</dd></div></div>
     </dl>
   </div>
-  <form id="enquiry" method="POST" action="https://formsubmit.co/hello@ctmx.co.uk">
+  <form id="enquiry" method="POST" action="https://formsubmit.co/katie@ctmx.co.uk">
     <input type="hidden" name="_subject" value="New website enquiry - Custom X">
     <input type="hidden" name="_template" value="table">
     <p class="hp"><label>Leave blank <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
@@ -63,7 +63,7 @@
   var f=document.getElementById('enquiry');
   f.addEventListener('submit',function(e){
     e.preventDefault();
-    fetch('https://formsubmit.co/ajax/hello@ctmx.co.uk',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+    fetch('https://formsubmit.co/ajax/katie@ctmx.co.uk',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
       .then(function(r){if(!r.ok)throw 0;f.reset();document.getElementById('note').style.display='block'})
       .catch(function(){var n=document.getElementById('note');n.textContent='Sorry, that did not send. Please try again in a moment or give us a call.';n.style.display='block'});
   });
