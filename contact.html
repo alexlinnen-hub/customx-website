@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Custom X</title>
+<meta name="description" content="Get in touch with Custom X about property development, interior design or our curated products.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Custom X home"><span class="word">CUSTOM<span class="x">X</span></span><span class="tag">PROPERTY &nbsp;|&nbsp; INTERIORS &nbsp;|&nbsp; HOME</span></a>
+  <nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="property-development.html">Property Development</a><a href="interior-design.html">Interior Design</a><a href="products.html">Our Products</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a><button class="menu-btn close" aria-label="Close menu" onclick="toggleNav()"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></nav>
+  <a class="btn header-cta" href="contact.html">Enquire now</a>
+  <button class="menu-btn" aria-label="Open menu" onclick="toggleNav()"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+</div></header>
+<main>
+
+<section class="hero" style="background-image:url(hero-contact.jpg)"><div class="wrap">
+  <span class="eyebrow">Get in touch</span>
+  <h1 style="margin-top:14px">Let's bring<br>your vision<br>to life.</h1>
+  <p class="lead">Whether you're interested in a property development, our interior design service or our curated products, we'd love to hear from you.</p>
+</div></section>
+<section class="wrap contact on-light" id="form">
+  <div class="info"><span class="eyebrow rule">Contact us</span><h2>We're here<br>to help.</h2>
+    <p>If you have a question, would like to discuss a project or want to find out more about our services, please get in touch using the form. We look forward to hearing from you.</p>
+    <dl>
+      <div class="row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2z"/></svg><div><dt>Phone</dt><dd><a href="tel:+441218161960">0121 816 1960</a></dd></div></div>
+      <div class="row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><dt>Our location</dt><dd>Worcestershire, UK</dd></div></div>
+    </dl>
+  </div>
+  <form id="enquiry" method="POST" action="https://formsubmit.co/hello@ctmx.co.uk">
+    <input type="hidden" name="_subject" value="New website enquiry - Custom X">
+    <input type="hidden" name="_template" value="table">
+    <p class="hp"><label>Leave blank <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
+    <label for="f-name">Name *</label><input id="f-name" name="name" required autocomplete="name">
+    <label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email">
+    <label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel">
+    <label for="f-subject">Subject</label>
+    <select id="f-subject" name="subject">
+      <option value="">Please select&hellip;</option>
+      <option value="property">Property development</option>
+      <option value="interior">Interior design (register interest)</option>
+      <option value="products">Our products</option>
+      <option value="other">Something else</option>
+    </select>
+    <label for="f-msg">Message *</label><textarea id="f-msg" name="message" required></textarea>
+    <button class="btn dark" type="submit">Send message <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+    <p class="form-note" id="note">Thank you &ndash; we'll be in touch shortly.</p>
+  </form>
+  <div class="img" style="background-image:url(mirror.jpg)" role="img" aria-label="Styled console with mirror and vase"></div>
+</section>
+<section class="band" style="background-image:url(band-contact.jpg)"><div class="wrap">
+  <div><span class="eyebrow rule">Work with us</span><h2>Exceptional spaces<br>start with a conversation.</h2></div>
+  <a class="btn" href="#form">Enquire now <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+</div></section>
+<script>
+(function(){
+  var s=new URLSearchParams(location.search).get('subject');
+  if(s)document.getElementById('f-subject').value=s;
+  var f=document.getElementById('enquiry');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    fetch('https://formsubmit.co/ajax/hello@ctmx.co.uk',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(function(r){if(!r.ok)throw 0;f.reset();document.getElementById('note').style.display='block'})
+      .catch(function(){var n=document.getElementById('note');n.textContent='Sorry, that did not send. Please try again in a moment or give us a call.';n.style.display='block'});
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+  <a class="logo" href="index.html"><span class="word">CUSTOM<span class="x">X</span></span><span class="tag">PROPERTY &nbsp;|&nbsp; INTERIORS &nbsp;|&nbsp; HOME</span></a>
+  <nav aria-label="Footer"><a href="index.html">Home</a><a href="property-development.html">Property Development</a><a href="interior-design.html">Interior Design</a><a href="products.html">Our Products</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  <div class="legal">&copy; <span id="yr">2026</span> Custom X. Worcestershire, UK.</div>
+</div></footer>
+<script>
+function toggleNav(){document.getElementById('nav').classList.toggle('open')}
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

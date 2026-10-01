@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Products | Custom X</title>
+<meta name="description" content="A curated collection of furniture, lighting, accessories and homewares chosen for quality and timeless appeal.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Custom X home"><span class="word">CUSTOM<span class="x">X</span></span><span class="tag">PROPERTY &nbsp;|&nbsp; INTERIORS &nbsp;|&nbsp; HOME</span></a>
+  <nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="property-development.html">Property Development</a><a href="interior-design.html">Interior Design</a><a href="products.html" aria-current="page">Our Products</a><a href="about.html">About</a><a href="contact.html">Contact</a><button class="menu-btn close" aria-label="Close menu" onclick="toggleNav()"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></nav>
+  <a class="btn header-cta" href="contact.html">Enquire now</a>
+  <button class="menu-btn" aria-label="Open menu" onclick="toggleNav()"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+</div></header>
+<main>
+
+<section class="hero" style="background-image:url(hero-products.jpg)"><div class="wrap">
+  <h1>Beautiful<br>things for<br>exceptional<br>homes.</h1>
+  <p class="lead">A carefully curated collection of furniture, lighting, accessories and homewares, chosen for their quality, style and timeless appeal.</p>
+</div></section>
+<section class="collection"><div class="wrap">
+  <span class="eyebrow">Explore our collection</span>
+  <h2>Discover Pieces for Every Space</h2>
+  <p>From statement furniture to the finishing touches, our products are selected to help you create a home that feels considered, comfortable and uniquely yours.</p>
+  <div class="cats"><a class="cat" href="contact.html?subject=products#form"><img src="cat-furniture.jpg" alt="Furniture" loading="lazy"><span>Furniture</span></a><a class="cat" href="contact.html?subject=products#form"><img src="cat-lighting.jpg" alt="Lighting" loading="lazy"><span>Lighting</span></a><a class="cat" href="contact.html?subject=products#form"><img src="cat-accessories.jpg" alt="Accessories" loading="lazy"><span>Accessories</span></a><a class="cat" href="contact.html?subject=products#form"><img src="cat-textiles.jpg" alt="Textiles" loading="lazy"><span>Textiles</span></a><a class="cat" href="contact.html?subject=products#form"><img src="cat-mirrors.jpg" alt="Mirrors &amp; Art" loading="lazy"><span>Mirrors &amp; Art</span></a><a class="cat" href="contact.html?subject=products#form"><img src="cat-tableware.jpg" alt="Tableware" loading="lazy"><span>Tableware</span></a></div>
+</div></section>
+<section class="curated">
+  <div class="txt"><div><span class="eyebrow">Our approach</span><h2>Considered<br>curated<br>timeless.</h2></div>
+  <p>We believe exceptional homes are created through a thoughtful combination of quality, craftsmanship and carefully selected pieces. Our collection brings together timeless design with everyday functionality, helping you create spaces that feel like home.</p></div>
+  <div class="img" style="background-image:url(bowl.jpg)" role="img" aria-label="Stone bowl styled on books"></div>
+  <div class="q"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4C9 4 4 9 4 17c0 1 0 2 .5 3"/><path d="M20 4c0 10-5 15-13 15"/><path d="M4.5 20C8 14 12 10 16 8"/></svg><h3>QUALITY SELECTION</h3><p>Carefully chosen products that complement modern living and stand the test of time.</p></div>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+  <a class="logo" href="index.html"><span class="word">CUSTOM<span class="x">X</span></span><span class="tag">PROPERTY &nbsp;|&nbsp; INTERIORS &nbsp;|&nbsp; HOME</span></a>
+  <nav aria-label="Footer"><a href="index.html">Home</a><a href="property-development.html">Property Development</a><a href="interior-design.html">Interior Design</a><a href="products.html">Our Products</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  <div class="legal">&copy; <span id="yr">2026</span> Custom X. Worcestershire, UK.</div>
+</div></footer>
+<script>
+function toggleNav(){document.getElementById('nav').classList.toggle('open')}
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
